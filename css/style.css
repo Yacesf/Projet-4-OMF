@@ -13,7 +13,6 @@
 }
 body
 {
-  width: 100vw;
   display: flex;    
   align-items: center;
   flex-direction: column;   
@@ -23,6 +22,11 @@ body
   width: 375px;
 }
 h1
+{
+  font-size: 24px;
+  font-weight: 700;
+}
+h2
 {
   font-size: 24px;
   font-weight: 700;
@@ -92,8 +96,9 @@ header img
   gap: 25px;
   margin-top: 45px;
   margin-left: 20px;
+  margin-bottom: 65px;
 }
-.choix_rest
+.choix_fonct
 {
   display: flex;
   flex-direction: row;
@@ -133,4 +138,51 @@ header img
 .block_fonct i:hover
 {
   color: #9356DC;
+}
+/*restaurant*/
+.section_rest
+{
+  background-color: #F7F7F7;
+  padding: 55px 20px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.choix_rest
+{
+  height: 250px;
+  width: 340px;
+  border-radius: 15px;
+  background-color: white;
+}
+.img_rest
+{
+  width: 340px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+.txt_rest
+{
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin: 15px 0 0 13px;
+}
+.nom_rest
+{
+  font-size: 18px;
+  font-weight: 700;
+}
+.rue_rest
+{
+  display: flex;
+  font-size: 17px;
+}
+.coeur_rest
+{
+  position: relative;    
+  left: 175px;
+  font-size: 22px;
+  bottom: 15px;
 }
