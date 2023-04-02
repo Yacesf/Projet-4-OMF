@@ -146,18 +146,17 @@ header img
   padding: 55px 20px 20px 20px;
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 20px;
 }
 .choix_rest
 {
-  height: 250px;
-  width: 340px;
+  height: 240px;
   border-radius: 15px;
   background-color: white;
 }
 .img_rest
 {
-  width: 340px;
+  width: 335px;
   height: 160px;
   object-fit: cover;
   border-radius: 15px 15px 0 0;
@@ -167,7 +166,7 @@ header img
   display: flex;
   flex-direction: column;
   gap: 6px;
-  margin: 15px 0 0 13px;
+  margin: 10px 0 0 13px;
 }
 .nom_rest
 {
@@ -185,4 +184,17 @@ header img
   left: 175px;
   font-size: 22px;
   bottom: 15px;
+}
+.new_rest
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #008766;
+  background-color: #99E2D0;
+  width: 90px;
+  height: 30px;
+  position: relative;
+  left: 235px;
+  bottom: 210px;
 }
