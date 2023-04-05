@@ -103,6 +103,7 @@ header img
   display: flex;
   flex-direction: row;
   align-items: center;
+  position: relative;
   width: 320px;
   height: 70px;
   background: #F7F7F7;
@@ -114,13 +115,13 @@ header img
   display: flex;
   justify-content: center;
   align-items: center;
+  position: absolute;
   background-color: #9356DC;
   border-radius: 50px;
   color: white;
   height: 24px;
   width: 24px;
-  position: relative;
-  right: 13px;
+  right: 308px;
 }
 .block_fonct
 {
@@ -128,7 +129,7 @@ header img
   flex-direction: row;
   align-items: center;
   gap: 22px;
-  margin-left: 5px;
+  margin-left: 29px;
   font-weight: 500;
 }
 .color_item
@@ -143,7 +144,7 @@ header img
 .section_rest
 {
   background-color: #F7F7F7;
-  padding: 55px 20px 20px 20px;
+  padding: 55px 20px 65px 20px;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -156,6 +157,7 @@ header img
 }
 .img_rest
 {
+  background-position: bottom;
   width: 335px;
   height: 160px;
   object-fit: cover;
@@ -167,6 +169,7 @@ header img
   flex-direction: column;
   gap: 6px;
   margin: 10px 0 0 13px;
+  position: relative;
 }
 .nom_rest
 {
@@ -178,12 +181,34 @@ header img
   display: flex;
   font-size: 17px;
 }
+.all_heart
+{
+  position: absolute;
+  right: 50px;
+  top: 15px;
+}
 .coeur_rest
 {
-  position: relative;    
-  left: 175px;
+  position: absolute;    
   font-size: 22px;
-  bottom: 15px;
+  opacity: 1;
+}
+.coeur_rest:hover
+{
+  opacity: 0;
+}
+.fav_rest
+{
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip:text;
+  position: absolute;    
+  font-size: 22px;
+  opacity: 0;
+}
+.fav_rest:hover
+{
+  opacity: 1;
 }
 .new_rest
 {
@@ -195,6 +220,44 @@ header img
   width: 90px;
   height: 30px;
   position: relative;
-  left: 235px;
+  left: 215px;
   bottom: 210px;
+}
+/*footer*/
+.div_footer
+{
+  background: #353535;
+  color: white;
+  padding: 25px;
+}
+.logo_footer
+{
+  color: white;
+  font-size: 18px;
+  font-family: 'Shrikhand';
+  font-weight: 400;
+}
+.text_footer
+{
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin-top: 20px;
+  text-align: start;
+}
+#prop_rest
+{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+#dev_part
+{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.fa-handshake-angle
+{
+  font-size: 11px;
 }
