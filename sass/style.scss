@@ -1,0 +1,258 @@
+// Couleur
+  $primaire-color: #9356DC;
+  $secondaire-color: #FF79DA;
+  $tertiaire-color: #99E2D0;
+  $fond-footer: #353535;
+  $fond-beige: #F7F7F7;
+*
+{    
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;   
+  box-sizing: border-box;
+}
+body
+{
+  display: flex;    
+  align-items: center;
+  flex-direction: column;   
+}
+.container
+{
+  width: 375px;
+}
+h1
+{
+  font-size: 24px;
+  font-weight: 700;
+}
+h2
+{
+  font-size: 24px;
+  font-weight: 700;
+}
+a
+{
+  text-decoration: none;
+  color: black;
+}
+%flex_center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin button-gradient {
+  color: white;
+  border: none;
+  font-weight: 500;
+  background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+}
+/*header*/
+header  {
+  & img {
+  width: 162px;
+  }
+}
+.header__bloc-img {
+  @extend %flex_center;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+  height: 63px;
+}
+.header__loc {
+  @extend %flex_center;
+  flex-direction: row;
+  height: 50px;
+  color: $fond-footer;
+  gap: 15px;
+  background: linear-gradient(180deg, rgb(147, 147, 147) -23%, #EAEAEA 10%);
+  font-weight: 500;
+}
+/*main*/
+/*presentation page*/
+.title__page {
+  background-color: $fond-beige;
+  padding: 40px 28px;
+  text-align: center;
+    
+    &__pres {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+        &__descr {
+          font-size: 18px;
+          font-weight: 300;
+          color: $fond-footer;
+        }
+    }
+}
+.title__button {
+  @include button-gradient();
+  margin-top: 40px;
+  height: 50px;
+  width: 195px;
+
+    &:hover {
+      transform: scale(1.02);
+      opacity: 0.9;
+    }
+}
+/*fonctionnement*/
+.fonct {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-top: 45px;
+  margin-left: 20px;
+  margin-bottom: 65px;
+    
+    &__choix {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      position: relative;
+      width: 320px;
+      height: 70px;
+      background: $fond-beige;
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+      border-radius: 20px;
+      }
+      &__nbr {
+        @extend %flex_center;
+        position: absolute;
+        background-color: $primaire-color;
+        border-radius: 50px;
+        color: white;
+        height: 24px;
+        width: 24px;
+        right: 308px;
+        }
+
+          &__block {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 22px;
+            margin-left: 29px;
+            font-weight: 500;
+          
+              & i:hover {
+                color: $primaire-color;
+              }
+          }
+   
+}
+.color_item {
+  color: #7E7E7E;
+}
+/*restaurant*/
+.rest {
+  background-color: $fond-beige;
+  padding: 55px 20px 65px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+    &__choix {
+      border-radius: 15px;
+      background-color: white;
+    }
+
+      &__img {
+        width: 335px;
+        height: 160px;
+        object-fit: cover;
+        border-radius: 15px 15px 0 0;
+      }
+
+        &__text {
+          display: flex;
+          flex-direction: column;
+          gap: 6px;
+          margin: 10px 0 0 13px;
+          position: relative;
+        }
+
+}
+.nom {
+  font-size: 18px;
+  font-weight: 700;
+}
+.rue {
+  font-size: 17px;
+}
+.heart {
+  position: absolute;
+  right: 50px;
+  top: 15px;
+
+    &__vide {
+      position: absolute;    
+      font-size: 22px;
+      opacity: 1;
+
+        &:hover {
+          opacity: 0;
+        }
+    }
+
+          &__fav {
+            background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip:text;
+            position: absolute;    
+            font-size: 22px;
+            opacity: 0;
+
+              &:hover {
+                opacity: 1;
+              }
+          }
+}
+.rest__new {
+  @extend %flex_center;
+  color: #008766;
+  background-color: $tertiaire-color;
+  width: 90px;
+  height: 30px;
+  position: relative;
+  left: 215px;
+  bottom: 210px;
+}
+/*footer*/
+.footer {
+  background: $fond-footer;
+  color: white;
+  padding: 25px;
+  width: 375px;
+
+    &__logo {
+      color: white;
+      font-size: 18px;
+      font-family: 'Shrikhand';
+      font-weight: 400;
+    }
+
+      &__text {
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+        margin-top: 20px;
+        text-align: start;
+
+          &__icon {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+          }
+      }
+
+}
+.fa-handshake-angle {
+  font-size: 11px;
+}
+#contact {
+  color: white;
+}
