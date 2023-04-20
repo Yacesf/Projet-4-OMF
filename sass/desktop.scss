@@ -1,0 +1,46 @@
+@media (min-width: 768px) {
+  .fonct {
+    padding: 0 60px;
+    margin-left: 0;
+
+    &__ensemble {
+      flex-direction: row;
+      justify-content: center;
+    }
+  }
+
+  .rest {
+    padding: 35px 60px 30px 60px;
+
+    &__ensemble {
+      gap: 60px;
+    }
+
+    &__2 {
+      gap: 0;
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+
+    &__choix {
+      width: 450px;
+    }
+  }
+  .footer {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: baseline;
+    gap: 7%;
+    height: 114px;
+
+    &__text {
+      flex-direction: row;
+      gap: 50px;
+      margin-top: 40px;
+
+      &__2 {
+        flex-direction: row;
+      }
+    }
+  }
+}
