@@ -1,0 +1,151 @@
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container {
+  width: 100%;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.header__block__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  width: 100%;
+}
+.header__block {
+  height: 63px;
+  display: flex;
+  padding: 0 30px;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+}
+.header__block__img {
+  width: 100%;
+}
+.header__block__img img {
+  width: 162px;
+}
+.header__arrow {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+}
+.header__fond {
+  object-fit: cover;
+  height: 275px;
+  width: 100%;
+}
+
+h1 {
+  font-family: "Shrikhand";
+  font-size: 28px;
+  font-weight: 400;
+}
+
+.menu {
+  width: 100%;
+  background: #F7F7F7;
+  border-radius: 35px 35px 0 0;
+  padding: 40px 15px;
+  position: relative;
+  top: -50px;
+}
+.menu__plat {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  background: #FFFFFF;
+  box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  padding: 12px 15px;
+}
+.menu__plat__nom {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21px;
+}
+.menu__plat__detail {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-weight: 300;
+}
+.menu__plat__detail__prix {
+  font-weight: 700;
+}
+
+.heart {
+  position: absolute;
+  right: 70px;
+  top: 45px;
+}
+.heart__vide {
+  position: absolute;
+  font-size: 28px;
+  opacity: 1;
+}
+.heart__vide:hover {
+  opacity: 0;
+}
+.heart__fav {
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  position: absolute;
+  font-size: 28px;
+  opacity: 0;
+}
+.heart__fav:hover {
+  opacity: 1;
+}
+
+.entrees {
+  margin-top: 45px;
+  display: flex;
+  flex-direction: column;
+}
+.entrees__line {
+  border: 3px solid #99E2D0;
+  width: 40px;
+  margin-top: 5px;
+}
+.entrees__block {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+/*# sourceMappingURL=menu-la-palette.css.map */

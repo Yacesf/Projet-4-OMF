@@ -22,8 +22,14 @@
       justify-content: space-evenly;
     }
 
-    &__choix {
-      width: 450px;
+    &__lien {
+      width: 33%;
+    }
+
+    &__new {
+      width: 29%;
+      left: 65%;
+      bottom: 80%;
     }
   }
   .footer {

@@ -18,8 +18,13 @@
     flex-direction: row;
     justify-content: space-evenly;
   }
-  .rest__choix {
-    width: 450px;
+  .rest__lien {
+    width: 33%;
+  }
+  .rest__new {
+    width: 29%;
+    left: 65%;
+    bottom: 80%;
   }
   .footer {
     display: flex;

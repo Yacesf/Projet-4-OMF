@@ -30,7 +30,7 @@ a {
   color: black;
 }
 
-.rest__new, .fonct__nbr, .header__loc, .header__bloc-img {
+.rest__new, .fonct__nbr, .header__loc, .header__block-img {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -41,7 +41,7 @@ header img {
   width: 162px;
 }
 
-.header__bloc-img {
+.header__block-img {
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
   height: 63px;
 }

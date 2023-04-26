@@ -2,7 +2,8 @@
 <html lang="fr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/style_menu1.css">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <link rel="stylesheet" href="css/menu/menu-la-palette.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
@@ -10,12 +11,65 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>OhmyFood</title>
+    <title>Menu la Palette du gôut</title>
   </head>
     <body>
       <div class="container">
         <header>
-          <div>
-            <div class="logo_head">
-              <img src="Images_et_textes_Ohmyfood/images/logo/ohmyfood.png" alt="logo ohmyfood">
+          <div class="header">
+            <div class="header__block">
+              <a class="header__arrow" href="index.html">
+                <i class="fa-solid fa-arrow-left"></i>
+              </a>
+              <div class="header__block__img">
+                  <img src="Images_et_textes_Ohmyfood/images/logo/ohmyfood.png" alt="logo ohmyfood">
+                </div>
+              </div>
+              <img class="header__fond" src="Images_et_textes_Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="image la palette du gout">
+          </div>
+        </header>
+        <main>
+          <div class="menu">
+              <h1>La palette du gôut</h1>
+            <div class="heart">
+              <i class="heart__vide fa-sharp fa-regular fa-heart"></i>   
+              <i class="heart__fav fa-sharp fa-solid fa-heart"></i>
             </div>
+            <div class="entrees">
+              <h2>Entrées</h2>
+              <div class="entrees__line"></div>
+              <div class="entrees__block">
+              <a href="#">
+                <div class="menu__plat">
+                  <p class="menu__plat__nom">Fricassée d'escargots</p>
+                  <div class="menu__plat__detail">
+                    <p>Au piment d'Espelette</p>
+                    <p class="menu__plat__detail__prix">25€</p>
+                  </div>
+                </div>
+              </a>
+              <a href="#">
+                <div class="menu__plat">
+                  <p class="menu__plat__nom">Foie gras de canard mi-cuit</p>
+                  <div class="menu__plat__detail">
+                    <p>Et ses copeaux de truffe noire</p>
+                    <p class="menu__plat__detail__prix">35€</p>
+                  </div>
+                </div>
+              </a>
+              <a href="#">
+                <div class="menu__plat">
+                  <p class="menu__plat__nom">Œuf au plat</p>
+                  <div class="menu__plat__detail">
+                    <p>Assaisonné à la truffe sur lit de caviar</p>
+                    <p class="menu__plat__detail__prix">20€</p>
+                  </div>
+                </div>
+              </a>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </body>
+</html>
