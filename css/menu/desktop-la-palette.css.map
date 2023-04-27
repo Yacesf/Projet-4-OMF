@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"desktop-la-palette.css"}
+{"version":3,"sourceRoot":"","sources":["../../sass/menu/desktop-la-palette.scss"],"names":[],"mappings":"AAAA;EACE;IACE;;EAEF;IACE;;EAEF;IACE;;EAEF;IACE;;EAEF;IACE;IACA;IACA;IACA;IACA;;EAEA;IACE;IACA;IACA;;EAEA;IACA","file":"desktop-la-palette.css"}

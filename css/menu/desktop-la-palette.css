@@ -1,3 +1,31 @@
-
+@media (min-width: 768px) {
+  main {
+    padding: 0 10%;
+  }
+  h1 {
+    text-align: center;
+  }
+  .heart {
+    right: 27%;
+  }
+  .menu__block {
+    padding: 0 20%;
+  }
+  .footer {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: baseline;
+    gap: 7%;
+    height: 114px;
+  }
+  .footer__text {
+    flex-direction: row;
+    gap: 50px;
+    margin-top: 40px;
+  }
+  .footer__text__2 {
+    flex-direction: row;
+  }
+}
 
 /*# sourceMappingURL=desktop-la-palette.css.map */

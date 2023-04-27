@@ -94,6 +94,12 @@ h1 {
   padding: 40px 15px;
   position: relative;
 
+  &__block {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+  }
+
   &__plat {
     display: flex;
     justify-content: space-between;
@@ -189,8 +195,6 @@ h1 {
 }
 .entrees {
   margin-top: 45px;
-  display: flex;
-  flex-direction: column;
 
   &__line {
     border: 3px solid $tertiaire-color;
@@ -211,9 +215,6 @@ h2 {
   font-size: 16px;
 }
 .plats {
-  margin-top: 45px;
-  display: flex;
-  flex-direction: column;
 
   &__line {
     border: 3px solid $tertiaire-color;
@@ -229,9 +230,6 @@ h2 {
   }
 }
 .desserts {
-  margin-top: 45px;
-  display: flex;
-  flex-direction: column;
 
   &__line {
     border: 3px solid $tertiaire-color;
