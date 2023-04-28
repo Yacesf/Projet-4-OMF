@@ -1,34 +1,40 @@
 @media (min-width: 768px) {
   .fonct {
-    padding: 0 60px;
-    margin-left: 0;
+    margin: 45px 13% 65px;
 
     &__ensemble {
       flex-direction: row;
-      justify-content: center;
+      gap: 35px;
+    }
+    &__choix {
+      width: 100%;
     }
   }
 
   .rest {
-    padding: 35px 60px 30px 60px;
+    padding: 35px 12% 30px 13%;
 
     &__ensemble {
       gap: 60px;
     }
 
     &__2 {
-      gap: 0;
+      gap: 100px;
       flex-direction: row;
-      justify-content: space-evenly;
+      justify-content: space-between;
     }
 
     &__lien {
-      width: 33%;
+      width: 45%;
+    }
+
+    &__img {
+      height: 180px;
     }
 
     &__new {
-      width: 29%;
-      left: 65%;
+      width: 26%;
+      left: 70%;
       bottom: 80%;
     }
   }
