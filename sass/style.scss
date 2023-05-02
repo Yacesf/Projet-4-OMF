@@ -67,6 +67,7 @@ a
 @keyframes background-loader {
   to {
     transform: scale(0);
+    opacity: 0;
   }
 }
 %flex_center {
@@ -139,9 +140,7 @@ header  {
   display: flex;
   flex-direction: column;
   gap: 25px;
-  margin-top: 45px;
-  margin-left: 20px;
-  margin-bottom: 65px;
+  margin: 45px 15px 65px 20px;
 
   &__ensemble {
     display: flex;

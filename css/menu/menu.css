@@ -15,27 +15,6 @@ body {
   width: 100%;
 }
 
-.loader {
-  background: #F7F7F7;
-  height: 100vh;
-  display: grid;
-  place-items: center;
-  position: fixed;
-  inset: 0;
-  z-index: 1;
-  animation: background-loader 0.5s 3s forwards;
-}
-.loader::after {
-  content: "";
-  border-top: solid 4px #9356DC;
-  border-right: solid 3px #FF79DA;
-  border-bottom: solid 2px #99E2D0;
-  border-radius: 50%;
-  height: 120px;
-  width: 120px;
-  animation: spin 1.5s infinite linear;
-}
-
 h1 {
   font-size: 24px;
   font-weight: 700;
@@ -51,17 +30,14 @@ a {
   color: black;
 }
 
-@keyframes spin {
-  to {
-    transform: rotate(0deg);
+@keyframes translate-menu {
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
   }
-  from {
-    transform: rotate(360deg);
-  }
-}
-@keyframes background-loader {
-  to {
-    transform: scale(0);
+  100% {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 .button, #block-button, .menu__plat__check, .header__block__img {
@@ -127,6 +103,19 @@ h1 {
   display: flex;
   flex-direction: column;
   gap: 15px;
+}
+.menu section {
+  animation: translate-menu 1s;
+  animation-fill-mode: both;
+}
+.menu section:nth-child(n+1) {
+  animation-delay: 500ms;
+}
+.menu section:nth-child(n+2) {
+  animation-delay: 1000ms;
+}
+.menu section:nth-child(n+3) {
+  animation-delay: 1500ms;
 }
 .menu__plat {
   display: flex;
@@ -278,4 +267,4 @@ h2 {
   color: white;
 }
 
-/*# sourceMappingURL=menu-la-palette.css.map */
+/*# sourceMappingURL=menu.css.map */

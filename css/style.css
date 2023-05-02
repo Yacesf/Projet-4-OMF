@@ -62,6 +62,7 @@ a {
 @keyframes background-loader {
   to {
     transform: scale(0);
+    opacity: 0;
   }
 }
 .rest__new, .fonct__nbr, .header__loc, .header__block-img {
@@ -130,9 +131,7 @@ header img {
   display: flex;
   flex-direction: column;
   gap: 25px;
-  margin-top: 45px;
-  margin-left: 20px;
-  margin-bottom: 65px;
+  margin: 45px 15px 65px 20px;
 }
 .fonct__ensemble {
   display: flex;
