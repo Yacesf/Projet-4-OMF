@@ -1,0 +1,35 @@
+.loader {
+  background: $fond-beige;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  animation: background-loader 0.5s 3s forwards;
+
+  &::after {
+    content: "";
+    border-top: solid 4px $primaire-color;
+    border-right: solid 3px $secondaire-color;
+    border-bottom: solid 2px $tertiaire-color;
+    border-radius: 50%; 
+    height: 120px;
+    width: 120px;
+    animation: spin 1.5s infinite linear;
+  }
+}
+@keyframes spin {
+  to {
+    transform: rotate(0deg);
+  }
+  from {
+    transform: rotate(360deg);
+  }
+}
+@keyframes background-loader {
+  to {
+    transform: scale(0);
+    opacity: 0;
+  }
+}

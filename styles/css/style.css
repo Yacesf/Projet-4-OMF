@@ -15,6 +15,21 @@ body {
   width: 100%;
 }
 
+h1 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
 .loader {
   background: #F7F7F7;
   height: 100vh;
@@ -34,21 +49,6 @@ body {
   height: 120px;
   width: 120px;
   animation: spin 1.5s infinite linear;
-}
-
-h1 {
-  font-size: 24px;
-  font-weight: 700;
-}
-
-h2 {
-  font-size: 24px;
-  font-weight: 700;
-}
-
-a {
-  text-decoration: none;
-  color: black;
 }
 
 @keyframes spin {
@@ -293,6 +293,56 @@ header img {
 
 #contact {
   color: white;
+}
+
+@media (min-width: 768px) {
+  .fonct {
+    margin: 45px 13% 65px;
+  }
+  .fonct__ensemble {
+    flex-direction: row;
+    gap: 35px;
+  }
+  .fonct__choix {
+    width: 100%;
+  }
+  .rest {
+    padding: 35px 12% 30px 13%;
+  }
+  .rest__ensemble {
+    gap: 60px;
+  }
+  .rest__2 {
+    gap: 100px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .rest__lien {
+    width: 45%;
+  }
+  .rest__img {
+    height: 180px;
+  }
+  .rest__new {
+    width: 26%;
+    left: 70%;
+    bottom: 80%;
+  }
+  .footer {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: baseline;
+    gap: 7%;
+    height: 114px;
+  }
+  .footer__text {
+    flex-direction: row;
+    gap: 50px;
+    margin-top: 40px;
+  }
+  .footer__text__2 {
+    flex-direction: row;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

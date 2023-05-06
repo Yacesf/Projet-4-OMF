@@ -1,89 +1,3 @@
-// Couleur
-  $primaire-color: #9356DC;
-  $secondaire-color: #FF79DA;
-  $tertiaire-color: #99E2D0;
-  $fond-footer: #353535;
-  $fond-beige: #F7F7F7;
-*
-{    
-  font-family: 'Roboto', sans-serif;
-  margin: 0;
-  padding: 0;   
-  box-sizing: border-box;
-}
-body
-{
-  display: flex;    
-  align-items: center;
-  flex-direction: column;   
-}
-.container {
-  width: 100%;
-}
-.loader {
-  background: $fond-beige;
-  height: 100vh;
-  display: grid;
-  place-items: center;
-  position: fixed;
-  inset: 0;
-  z-index: 1;
-  animation: background-loader 0.5s 3s forwards;
-
-  &::after {
-    content: "";
-    border-top: solid 4px $primaire-color;
-    border-right: solid 3px $secondaire-color;
-    border-bottom: solid 2px $tertiaire-color;
-    border-radius: 50%; 
-    height: 120px;
-    width: 120px;
-    animation: spin 1.5s infinite linear;
-  }
-}
-h1
-{
-  font-size: 24px;
-  font-weight: 700;
-}
-h2
-{
-  font-size: 24px;
-  font-weight: 700;
-}
-a
-{
-  text-decoration: none;
-  color: black;
-}
-@keyframes spin {
-  to {
-    transform: rotate(0deg);
-  }
-  from {
-    transform: rotate(360deg);
-  }
-}
-@keyframes background-loader {
-  to {
-    transform: scale(0);
-    opacity: 0;
-  }
-}
-%flex_center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-@mixin button-gradient {
-  color: white;
-  border: none;
-  font-weight: 500;
-  background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
-  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-  border-radius: 25px;
-  cursor: pointer;
-}
 /*header*/
 header  {
   & img {
@@ -112,9 +26,7 @@ header  {
   text-align: center;
     
   &__pres {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+    @include flex_column_gap(10px);
 
     &__descr {
       font-size: 18px;
@@ -137,15 +49,11 @@ header  {
 }
 /*fonctionnement*/
 .fonct {
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
+  @include flex_column_gap(25px);
   margin: 45px 15px 65px 20px;
 
   &__ensemble {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
+    @include flex_column_gap(25px);
   }
     
   &__choix {
@@ -190,9 +98,7 @@ header  {
 .rest {
   background-color: $fond-beige;
   padding: 55px 20px 65px 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+  @include flex_column_gap(20px);
 
   &__choix {
     border-radius: 15px;
@@ -208,23 +114,17 @@ header  {
   }
 
   &__text {
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
+    @include flex_column_gap(6px);
     padding: 10px 13px;
     position: relative;
   }
         
   &__ensemble {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+    @include flex_column_gap(20px);
   }
 
   &__2 {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+    @include flex_column_gap(20px);
   }
 }
 .nom {
@@ -288,9 +188,7 @@ header  {
   }
 
   &__text {
-    display: flex;
-    flex-direction: column;
-    gap: 7px;
+    @include flex_column_gap(7px);
     margin-top: 20px;
     text-align: start;
 
@@ -301,9 +199,7 @@ header  {
     }
 
     &__2 {
-      display: flex;
-      flex-direction: column;
-      gap: 7px;
+      @include flex_column_gap(7px);
     }
   }
 }
